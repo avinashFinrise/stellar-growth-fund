@@ -1,0 +1,52 @@
+.ourServicesSection {
+    >div {
+        h2 {
+            text-align: center;
+        }
+
+        .servicesCard {
+            display: flex;
+            gap: 2rem 4rem;
+            flex-wrap: wrap;
+            padding-top: 2rem;
+
+            >div {
+                border: 1px solid var(--tercolor);
+                padding: 2.5rem 2rem;
+                flex: 1 1 calc(50% - 4rem);
+                box-sizing: border-box;
+                border-radius: 15px;
+
+                h5 {
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 1.75rem;
+                    line-height: normal;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        >div {
+            .servicesCard {
+                >div {
+                    padding: 1.4rem;
+
+                    h5 {
+                        font-size: 1.7rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

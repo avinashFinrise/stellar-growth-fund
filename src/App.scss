@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#root {
+  --bgcolor: #010012;
+  --priColor: #f9f9f9;
+  --secColor: #8A8A8A;
+  --tercolor: #87C53E;
+  --navbg: #024475;
+
+
+
+
+  /* height: 100vh; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  /* width: 100vw; */
+  height: max-content;
+  background-color: var(--bgcolor);
+  color: var(--priColor);
+
+  --linerbg: linear-gradient(270deg, #024475 47%, #03abbd 98%);
+  --linerbg2: linear-gradient(0deg, rgba(2, 68, 117, 1) 27%, rgba(3, 171, 189, 1) 97%);
+  --color: #8f8f8f;
+  --shadow: rgb(53 53 53 / 48%) 1px 3px 5px 0px,
+    rgb(53 53 53 / 49%) 0px 4px 4px -8px;
+
+
+
+  @media screen and (max-width:768px) {
+    overflow-x: hidden;
+  }
+}
+
+.ccontainer {
+  width: min(1800px, 90%);
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 4.563rem;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.button {
+  padding: 21px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  background: var(--tercolor);
+  border: none;
+  border-radius: 2rem;
+  font-weight: 400;
+}

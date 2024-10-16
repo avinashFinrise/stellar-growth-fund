@@ -1,0 +1,40 @@
+.joinUsSection {
+    background-image: url('../../assets/images/join-us-banner.jpg');
+    height: 830px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+
+        ::after {
+            position: absolute;
+            inset: 0;
+            content: "";
+            z-index: -1;
+            background: linear-gradient(90deg, rgb(28 33 37 / 31%) 27%, rgb(16 21 24 / 21%) 90%);
+        }
+
+        p {
+            font-size: 26px;
+            font-weight: 600;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        height: 550px;
+
+        >div {
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

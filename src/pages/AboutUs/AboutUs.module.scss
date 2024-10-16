@@ -1,0 +1,164 @@
+.aboutSection {
+
+    .conatiner {
+        padding-top: 3rem;
+
+        >div {
+            padding-bottom: 6rem;
+
+        }
+
+        .introSection {
+            text-align: center;
+
+            p {
+                font-size: 1.625rem;
+                color: var(--secColor);
+                line-height: normal;
+                font-weight: 600;
+            }
+
+            p:not(:last-child) {
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        .whyChoose {
+            >div {
+                display: flex;
+                gap: 5rem;
+                // align-items: center;
+                padding-top: 3rem;
+
+                >div {
+                    flex: 1;
+
+                    .singleContent,
+                    img,
+                    .arrow {
+
+                        border: 1px solid var(--tercolor);
+                    }
+
+
+
+                    img {
+                        width: 100%;
+                        min-height: 534px;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 25px;
+                    }
+                }
+
+                .contentSection {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+
+                    .singleContent {
+                        border-radius: 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 3rem;
+                        gap: 2rem;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .content {
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                        }
+
+                        .arrow {
+                            border-radius: 5px;
+                            display: grid;
+                            align-items: center;
+                            padding: 1rem;
+                            font-size: 1.2rem;
+                            color: var(--tercolor);
+                        }
+                    }
+                }
+            }
+        }
+
+        .unlockYourFinancial {
+            text-transform: capitalize;
+
+            h2 {
+                font-size: 4rem;
+                line-height: 1.1;
+                margin-top: 0;
+
+                span {
+                    color: var(--tercolor);
+                }
+            }
+
+            button {
+                width: 18rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .conatiner {
+            >div {
+
+                padding-bottom: 5rem;
+            }
+
+            .introSection {
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .whyChoose {
+                >div {
+                    flex-direction: column-reverse;
+                    padding-top: 2rem;
+                    gap: 3rem;
+
+                    >div {
+                        img {
+                            min-height: 430px;
+                        }
+                    }
+
+                    .contentSection {
+                        gap: 2rem;
+
+                        .singleContent {
+                            padding: 1.5rem;
+
+                            .content,
+                            .arrow {
+                                font-size: 1rem;
+                            }
+
+                            .arrow {
+                                padding: 0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .unlockYourFinancial {
+                h2 {
+                    font-size: 3rem;
+                }
+
+                button {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+}
