@@ -1,6 +1,6 @@
 .joinUsSection {
     background-image: url('../../assets/images/join-us-banner.jpg');
-    height: 830px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@
     }
 
     @media screen and (max-width:768px) {
-        height: 550px;
+        height: 500px;
 
         >div {
             p {
