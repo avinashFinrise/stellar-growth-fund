@@ -8,6 +8,7 @@ const NavBar = () => {
     let location = useLocation();
     const [showBackground, setShowBackground] = useState(false)
     const [open, setOpen] = useState(false)
+    const [activeTab, setActiveTab] = useState("home");
     const data = [
         { title: 'Home', id: "home" },
         { title: 'About us', id: "about-us" },
@@ -16,21 +17,37 @@ const NavBar = () => {
         // { title: 'Help & Support', id: "help-support" },
     ]
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY > 50) { // Change '50' to the scroll threshold you want
-    //             setShowBackground(true);
-    //         } else {
-    //             setShowBackground(false);
-    //         }
-    //     };
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + window.innerHeight / 2; // Adjust for middle of the screen
 
-    //     window.addEventListener('scroll', handleScroll);
+            // Check each section and set the active tab
+            data.forEach((item) => {
+                const section = document.getElementById(item.id);
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
 
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        setActiveTab(item.id);
+                    }
+                }
+            });
+
+            // Background change on scroll
+            // if (window.scrollY > 50) {
+            //     setShowBackground(true);
+            // } else {
+            //     setShowBackground(false);
+            // }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [data]);
 
 
     console.log({ open })
@@ -55,7 +72,7 @@ const NavBar = () => {
                                 <a
                                     key={item.id}
                                     href={`#${item.id}`}
-                                    className={`${styles.links} ${location.hash.includes(item.id) && styles.active}`}
+                                    className={`${styles.links} ${activeTab === item.id ? styles.active : ''}`}
                                 >
                                     {item.title}
                                 </a>
