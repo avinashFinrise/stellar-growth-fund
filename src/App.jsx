@@ -18,7 +18,7 @@ function App() {
       <OurServices />
       <ManagementApproach />
       <JoinUs />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

@@ -12,10 +12,10 @@
             text-align: center;
 
             p {
-                font-size: 1.625rem;
+                font-size: 1rem;
                 color: var(--secColor);
-                line-height: normal;
-                font-weight: 600;
+                line-height: 22px;
+                // font-weight: 500;
             }
 
             p:not(:last-child) {
@@ -44,7 +44,7 @@
 
                     img {
                         width: 100%;
-                        min-height: 534px;
+                        min-height: 450px;
                         height: 100%;
                         object-fit: cover;
                         border-radius: 25px;
@@ -61,7 +61,7 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 3rem;
+                        padding: 2rem;
                         gap: 2rem;
 
                         p {
@@ -69,8 +69,9 @@
                         }
 
                         .content {
-                            font-size: 1.5rem;
-                            font-weight: 500;
+                            font-size: 1.1rem;
+                            // font-weight: 500;
+                            line-height: 22px;
                         }
 
                         .arrow {
@@ -90,7 +91,7 @@
             text-transform: capitalize;
 
             h2 {
-                font-size: 4rem;
+                font-size: 3.3rem;
                 line-height: 1.1;
                 margin-top: 0;
 

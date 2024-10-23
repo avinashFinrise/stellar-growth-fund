@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
 
 #root {
   --bgcolor: #010012;
@@ -11,8 +13,7 @@
 
 
   /* height: 100vh; */
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Maven Pro", sans-serif;
   /* width: 100vw; */
   height: max-content;
   background-color: var(--bgcolor);
@@ -37,20 +38,20 @@
 }
 
 .title {
-  font-size: 4.563rem;
+  font-size: 3.6rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 1.8rem;
   font-weight: 700;
 
   @media screen and (max-width: 768px) {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 }
 
 .button {
   padding: 21px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: capitalize;
   background: var(--tercolor);
   border: none;

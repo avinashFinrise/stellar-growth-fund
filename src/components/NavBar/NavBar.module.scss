@@ -29,12 +29,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-grow: 1;
+            // flex-grow: 1;
 
             .navTabs {
                 width: 100%;
                 text-align: center;
-                font-size: 1.3rem;
+                font-size: 1rem;
 
                 .links {
                     text-decoration: none;
@@ -50,7 +50,7 @@
 
                 .active {
                     border-bottom: 2px solid #fff;
-                    padding-bottom: 0.5rem;
+                    padding-bottom: 0.3rem;
                 }
             }
 

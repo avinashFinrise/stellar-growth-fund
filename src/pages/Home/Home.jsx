@@ -8,7 +8,7 @@ const Home = () => {
                 <div>
                     {/* <img src={img} alt="logo" /> */}
                     <h1 className='title'>Elevating Investment <br /> Excellence</h1>
-                    <button className={`${styles.getStartedBtn} button`}>get Started</button>
+                    {/* <button className={`${styles.getStartedBtn} button`}>get Started</button> */}
                 </div>
             </div>
             <div className={styles.gradient}></div>

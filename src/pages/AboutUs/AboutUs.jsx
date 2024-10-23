@@ -44,9 +44,9 @@ const AboutUs = () => {
                 <div className={styles.unlockYourFinancial}>
                     <h2 className="">Unlock your financial potential <br /> with  <span>Stellar Growth Fund</span>.</h2>
                     <h2 className=""><span>Contact us</span> now for a <br /> personalized consultation.</h2>
-                    <button className="button">
+                    {/* <button className="button">
                         Contact Us
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>

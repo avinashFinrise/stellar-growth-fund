@@ -12,8 +12,8 @@ const NavBar = () => {
         { title: 'Home', id: "home" },
         { title: 'About us', id: "about-us" },
         { title: 'Services', id: "services" },
-        { title: 'Blog', id: "blog" },
-        { title: 'Help & Support', id: "help-support" },
+        // { title: 'Blog', id: "blog" },
+        // { title: 'Help & Support', id: "help-support" },
     ]
 
     // useEffect(() => {
@@ -62,9 +62,9 @@ const NavBar = () => {
                             );
                         })}
                     </div>
-                    <div className={styles.usericon}>
+                    {/* <div className={styles.usericon}>
                         <FaRegUserCircle />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div >
