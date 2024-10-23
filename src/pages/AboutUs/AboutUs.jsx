@@ -31,7 +31,7 @@ const AboutUs = () => {
                                 funddata.map(item => {
                                     return <div className={styles.singleContent}>
                                         <p className={styles.content}>{item.content}</p>
-                                        <p className={styles.arrow}><FaArrowRightLong /></p>
+                                        {/* <p className={styles.arrow}><FaArrowRightLong /></p> */}
                                     </div>
                                 })
                             }
