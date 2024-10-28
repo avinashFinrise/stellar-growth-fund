@@ -73,6 +73,7 @@ const NavBar = () => {
                                     key={item.id}
                                     href={`#${item.id}`}
                                     className={`${styles.links} ${activeTab === item.id ? styles.active : ''}`}
+                                    onClick={() => setOpen(false)}
                                 >
                                     {item.title}
                                 </a>
